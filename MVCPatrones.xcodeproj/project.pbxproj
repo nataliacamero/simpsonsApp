@@ -13,6 +13,8 @@
 		E15D1A152ACB495B00F5675C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15D1A132ACB495B00F5675C /* LaunchScreen.storyboard */; };
 		E15D1A1E2ACB53F100F5675C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D1A1C2ACB53F100F5675C /* SplashViewController.swift */; };
 		E15D1A1F2ACB53F100F5675C /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15D1A1D2ACB53F100F5675C /* SplashViewController.xib */; };
+		E15D1A222ACB5A3A00F5675C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D1A202ACB5A3A00F5675C /* HomeTableViewController.swift */; };
+		E15D1A232ACB5A3A00F5675C /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15D1A212ACB5A3A00F5675C /* HomeTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E15D1A162ACB495B00F5675C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E15D1A1C2ACB53F100F5675C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E15D1A1D2ACB53F100F5675C /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		E15D1A202ACB5A3A00F5675C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		E15D1A212ACB5A3A00F5675C /* HomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E15D1A132ACB495B00F5675C /* LaunchScreen.storyboard */,
 				E15D1A1C2ACB53F100F5675C /* SplashViewController.swift */,
 				E15D1A1D2ACB53F100F5675C /* SplashViewController.xib */,
+				E15D1A202ACB5A3A00F5675C /* HomeTableViewController.swift */,
+				E15D1A212ACB5A3A00F5675C /* HomeTableViewController.xib */,
 			);
 			path = MVCPatrones;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15D1A232ACB5A3A00F5675C /* HomeTableViewController.xib in Resources */,
 				E15D1A152ACB495B00F5675C /* LaunchScreen.storyboard in Resources */,
 				E15D1A1F2ACB53F100F5675C /* SplashViewController.xib in Resources */,
 				E15D1A122ACB495B00F5675C /* Assets.xcassets in Resources */,
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15D1A222ACB5A3A00F5675C /* HomeTableViewController.swift in Sources */,
 				E15D1A1E2ACB53F100F5675C /* SplashViewController.swift in Sources */,
 				E15D1A092ACB495A00F5675C /* AppDelegate.swift in Sources */,
 				E15D1A0B2ACB495A00F5675C /* SceneDelegate.swift in Sources */,

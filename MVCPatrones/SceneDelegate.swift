@@ -14,14 +14,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(
         _ scene: UIScene,
-        willConnectTo session: UISceneSession,
+        willConnectTo session: UISceneSession,// El primer metodo que se ejecuta en la app. Hace la coneccion.
         options connectionOptions: UIScene.ConnectionOptions
     ) {
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
-        
         let splashViewController = SplashViewController()
-        window.rootViewController = splashViewController
+        let navigationController = UINavigationController() // Pila de navegacion
+        navigationController.setViewControllers([splashViewController], animated: true)
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
         
