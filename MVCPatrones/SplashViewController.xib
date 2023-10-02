@@ -17,14 +17,35 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_simpson" translatesAutoresizingMaskIntoConstraints="NO" id="xsB-fo-5qH">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="JSQ-Am-ZIH">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemIndigoColor"/>
+                </activityIndicatorView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JSQ-Am-ZIH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1tx-QE-auz"/>
+                <constraint firstItem="xsB-fo-5qH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5Eh-O2-s04"/>
+                <constraint firstAttribute="bottom" secondItem="xsB-fo-5qH" secondAttribute="bottom" id="FnP-Lq-GEC"/>
+                <constraint firstItem="JSQ-Am-ZIH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HSq-fX-b6C"/>
+                <constraint firstItem="xsB-fo-5qH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="POx-0A-0px"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xsB-fo-5qH" secondAttribute="trailing" id="nLV-l9-RRW"/>
+            </constraints>
             <point key="canvasLocation" x="132" y="-11"/>
         </view>
     </objects>
     <resources>
+        <image name="fondo_simpson" width="800" height="1422"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
