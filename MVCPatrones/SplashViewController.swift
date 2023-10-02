@@ -8,22 +8,33 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-
+    //IBOULETS
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    
+    
+    //CICLO DE VIDA
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+     
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    //Cuando vaya a aparecer
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if( !activityIndicator.isAnimating) {
+            activityIndicator.startAnimating()
+        }
+        
     }
-    */
+    
+    
+    
+    //Cuando vaa a dsaparecer
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        activityIndicator.stopAnimating()
+    }
 
 }
